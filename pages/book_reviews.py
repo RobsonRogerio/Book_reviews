@@ -9,9 +9,6 @@ pasta_datasets = Path(__file__).parents[1] / 'datasets'
 df_reviews = pd.read_csv(pasta_datasets / 'customer reviews.csv')
 df_top100_books = pd.read_csv(pasta_datasets / 'Top-100 Trending Books.csv')
 
-# df_reviews = pd.read_csv("D:\\Cursos\\Python\\Asimov\\Projetos\\Book_reviews\\datasets\\customer reviews.csv")
-# df_top100_books = pd.read_csv("D:\\Cursos\\Python\\Asimov\\Projetos\\Book_reviews\\datasets\\Top-100 Trending Books.csv")
-
 books = df_top100_books['book title'].unique()
 book = st.sidebar.selectbox('Books', books)
 

@@ -7,7 +7,6 @@ st.set_page_config(layout='wide')
 
 pasta_datasets = Path(__file__).parent / 'datasets'
 
-
 df_reviews = pd.read_csv(pasta_datasets/'customer reviews.csv')
 df_top100_books = pd.read_csv(pasta_datasets/'Top-100 Trending Books.csv')
 
